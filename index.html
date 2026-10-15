@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SakuraShop – Anime Figurines & Merchandise</title>
+</head>
+<body>
+
+<!-- Header -->
+<table width="100%" border="2" cellpadding="8" cellspacing="0" bgcolor="#E6E6E6">
+  <tr>
+    <td width="15%"><a href="#home"><b>LOGO</b></a></td>
+    <td width="55%">
+      <a href="#home">Home</a> |
+      <a href="#products">Categories</a> |
+      <a href="#products">New</a> |
+      <a href="#products">Sale</a> |
+      <a href="#about">About</a>
+    </td>
+    <td width="30%" align="right">
+      <form action="#products" method="get">
+        <input type="search" name="q" placeholder="Search" size="14">
+        <button type="submit">Search</button>
+        <a href="#cart">&#128722;</a>
+      </form>
+    </td>
+  </tr>
+</table>
+<br>
+
+<!-- ===== HOME ===== -->
+<a id="home"></a>
+<!-- Hero banner -->
+<table width="100%" border="2" cellpadding="20" cellspacing="0" bgcolor="#CCCCCC">
+  <tr>
+    <td align="center">
+      <img src="xmasbanner.png" alt="Autumn Figure Festival" width="900" height="280" style="max-width:100%;height:auto;">
+      <h2>Autumn Figure Festival</h2>
+      <p>New 1/7 scale releases and Nendoroids now in stock.</p>
+      <a href="#products">Shop the collection &rarr;</a>
+    </td>
+  </tr>
+</table>
+
+<h3>Popular Categories</h3>
+<table width="100%" cellspacing="10">
+  <tr>
+    <td width="33%">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <img src="popular.jpg" alt="Popular Series" width="280" height="160" style="max-width:100%;height:auto;">
+          <br><a href="#products">Popular Series</a>
+        </td></tr>
+      </table>
+    </td>
+    <td width="33%">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <img src="limited edition.jpg" alt="Limited Editions" width="280" height="160" style="max-width:100%;height:auto;">
+          <br><a href="#products">Limited Editions</a>
+        </td></tr>
+      </table>
+    </td>
+    <td width="33%">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <img src="accesories.jpg" alt="Accessories & Merch" width="280" height="160" style="max-width:100%;height:auto;">
+          <br><a href="#products">Accessories &amp; Merch</a>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<h3>Featured Products</h3>
+<table width="100%" cellspacing="10">
+  <tr>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="TanjiroFig.jpg" alt="Tanjiro Kamado 1/7 Scale Figure" width="200" height="200" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Tanjiro Kamado 1/7 Scale Figure</a><br>$89.99<br>
+          <form action="#cart" method="get"><button type="submit">Add</button></form>
+        </td></tr>
+      </table>
+    </td>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="GojoFig.jpg" alt="Satoru Gojo 1/7 Scale Figure" width="200" height="200" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Satoru Gojo 1/7 Scale Figure</a><br>$119.99<br>
+          <form action="#cart" method="get"><button type="submit">Add</button></form>
+        </td></tr>
+      </table>
+    </td>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="luffyfig.jpg" alt="Monkey D. Luffy 1/8 Scale Figure" width="200" height="200" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Monkey D. Luffy 1/8 Scale Figure</a><br>$74.99<br>
+          <form action="#cart" method="get"><button type="submit">Add</button></form>
+        </td></tr>
+      </table>
+    </td>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="NezukoFig.jpg" alt="Nezuko Kamado Nendoroid" width="200" height="200" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Nezuko Kamado Nendoroid</a><br>$54.99<br>
+          <form action="#cart" method="get"><button type="submit">Add</button></form>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<h3 id="about">About SakuraShop</h3>
+<p>SakuraShop is your source for anime figurines and related merchandise, from scale figures and Nendoroids to accessories.</p>
+
+<hr>
+
+<!-- ===== PRODUCTS ===== -->
+<a id="products"></a>
+<!-- Category / sort bar -->
+<form action="#products" method="get">
+<table width="100%" border="2" cellpadding="8" cellspacing="0" bgcolor="#E6E6E6">
+  <tr>
+    <td>Category: Popular Series &nbsp; | &nbsp;
+      Sort: <select name="sort">
+        <option value="newest" selected>Newest</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+      <button type="submit">Apply</button> &nbsp;
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <!-- Filters sidebar -->
+    <td width="28%" valign="top">
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td valign="top">
+            <h3>FILTERS</h3>
+            <hr>
+            <b>Price</b><br>
+            <input type="checkbox" name="price" value="under50"> Under $50<br>
+            <input type="checkbox" name="price" value="50-100"> $50–$100<br>
+            <input type="checkbox" name="price" value="100plus"> $100+<br>
+            <br>
+            <b>Series</b><br>
+            <input type="checkbox" name="series" value="demon-slayer"> Demon Slayer<br>
+            <input type="checkbox" name="series" value="jujutsu-kaisen"> Jujutsu Kaisen<br>
+            <input type="checkbox" name="series" value="one-piece"> One Piece<br>
+            <br>
+            <b>Scale</b><br>
+            <input type="checkbox" name="scale" value="1-7"> 1/7 &nbsp; <input type="checkbox" name="scale" value="1-8"> 1/8<br>
+            <input type="checkbox" name="scale" value="nendoroid"> Nendoroid<br>
+            <br>
+            <b>Availability</b><br>
+            <input type="checkbox" name="availability" value="in-stock"> In Stock<br>
+            <input type="checkbox" name="availability" value="pre-order"> Pre-order<br>
+            <br>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <!-- Product grid -->
+    <td width="72%" valign="top">
+      <table width="100%" cellspacing="10">
+        <tr>
+          <td width="33%">
+            <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+              <tr><td align="center">
+                <a href="#product">
+                <img src="https://placehold.co/220x220/CCCCCC/333333?text=Tanjiro+1%2F7" alt="Tanjiro Kamado 1/7 Scale Figure" width="220" height="220" style="max-width:100%;height:auto;">
+                </a>
+                <br><a href="#product">Tanjiro Kamado 1/7 Scale Figure</a><br>
+                <form action="#cart" method="get">$89.99 &nbsp; <button type="submit">Add to Cart</button></form>
+              </td></tr>
+            </table>
+          </td>
+          <td width="33%">
+            <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+              <tr><td align="center">
+                <a href="#product">
+                <img src="https://placehold.co/220x220/CCCCCC/333333?text=Gojo+1%2F7" alt="Satoru Gojo 1/7 Scale Figure" width="220" height="220" style="max-width:100%;height:auto;">
+                </a>
+                <br><a href="#product">Satoru Gojo 1/7 Scale Figure</a><br>
+                <form action="#cart" method="get">$119.99 &nbsp; <button type="submit">Add to Cart</button></form>
+              </td></tr>
+            </table>
+          </td>
+          <td width="33%">
+            <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+              <tr><td align="center">
+                <a href="#product">
+                <img src="https://placehold.co/220x220/CCCCCC/333333?text=Luffy+1%2F8" alt="Monkey D. Luffy 1/8 Scale Figure" width="220" height="220" style="max-width:100%;height:auto;">
+                </a>
+                <br><a href="#product">Monkey D. Luffy 1/8 Scale Figure</a><br>
+                <form action="#cart" method="get">$74.99 &nbsp; <button type="submit">Add to Cart</button></form>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="33%">
+            <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+              <tr><td align="center">
+                <a href="#product">
+                <img src="https://placehold.co/220x220/CCCCCC/333333?text=Nezuko+Nendoroid" alt="Nezuko Kamado Nendoroid" width="220" height="220" style="max-width:100%;height:auto;">
+                </a>
+                <br><a href="#product">Nezuko Kamado Nendoroid</a><br>
+                <form action="#cart" method="get">$54.99 &nbsp; <button type="submit">Add to Cart</button></form>
+              </td></tr>
+            </table>
+          </td>
+          <td width="33%">
+            <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+              <tr><td align="center">
+                <a href="#product">
+                <img src="https://placehold.co/220x220/CCCCCC/333333?text=Yuji+Nendoroid" alt="Yuji Itadori Nendoroid" width="220" height="220" style="max-width:100%;height:auto;">
+                </a>
+                <br><a href="#product">Yuji Itadori Nendoroid</a><br>
+                <form action="#cart" method="get">$49.99 &nbsp; <button type="submit">Add to Cart</button></form>
+              </td></tr>
+            </table>
+          </td>
+          <td width="33%">
+            <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+              <tr><td align="center">
+                <a href="#product">
+                <img src="https://placehold.co/220x220/CCCCCC/333333?text=Zoro+1%2F7" alt="Roronoa Zoro 1/7 Scale Figure" width="220" height="220" style="max-width:100%;height:auto;">
+                </a>
+                <br><a href="#product">Roronoa Zoro 1/7 Scale Figure</a><br>
+                <form action="#cart" method="get">$129.99 &nbsp; <button type="submit">Add to Cart</button></form>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Pagination -->
+      <p align="center"><a href="#products">&larr;</a> &nbsp; <b>1</b> &nbsp; <a href="#products">2</a> &nbsp; <a href="#products">3</a> &nbsp; … &nbsp; <a href="#products">4</a> &nbsp; <a href="#products">&rarr;</a></p>
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr>
+
+<!-- ===== PRODUCT ===== -->
+<a id="product"></a>
+<table width="100%" cellspacing="10" cellpadding="0">
+  <tr>
+    <!-- Left: images -->
+    <td width="48%" valign="top">
+      <img src="https://placehold.co/480x480/CCCCCC/333333?text=Tanjiro+Kamado+1%2F7" alt="Tanjiro Kamado 1/7 Scale Figure" width="480" height="480" style="max-width:100%;height:auto;border:2px solid #999;">
+      <br><br>
+      <table width="100%" cellspacing="6">
+        <tr>
+          <td width="25%"><img src="https://placehold.co/100x100/E6E6E6/666666?text=View+1" alt="View 1" width="100" height="100" style="max-width:100%;height:auto;border:2px solid #999;"></td>
+          <td width="25%"><img src="https://placehold.co/100x100/E6E6E6/666666?text=View+2" alt="View 2" width="100" height="100" style="max-width:100%;height:auto;border:2px solid #999;"></td>
+          <td width="25%"><img src="https://placehold.co/100x100/E6E6E6/666666?text=View+3" alt="View 3" width="100" height="100" style="max-width:100%;height:auto;border:2px solid #999;"></td>
+          <td width="25%"><img src="https://placehold.co/100x100/E6E6E6/666666?text=View+4" alt="View 4" width="100" height="100" style="max-width:100%;height:auto;border:2px solid #999;"></td>
+        </tr>
+      </table>
+    </td>
+
+    <!-- Right: product info -->
+    <td width="52%" valign="top">
+      <h2>Tanjiro Kamado 1/7 Scale Figure</h2>
+      <p>$89.99 &nbsp;&nbsp; &#9733;&#9733;&#9733;&#9733;&#9734; (24)</p>
+      <hr>
+
+      <form action="#cart" method="get">
+        <p>Scale: &nbsp;
+          <select name="scale">
+            <option value="1-7" selected>1/7</option>
+            <option value="1-8">1/8</option>
+          </select>
+        </p>
+        <p>Version: &nbsp;
+          <input type="radio" name="version" value="standard" checked> Standard &nbsp;/&nbsp;
+          <input type="radio" name="version" value="exclusive"> Exclusive
+        </p>
+        <p>Qty: &nbsp; <input type="number" name="qty" value="1" min="1" max="10" size="3"></p>
+
+        <table cellspacing="10">
+          <tr>
+            <td width="170"><button type="submit" formaction="#cart">Add to Cart</button></td>
+            <td width="170"><button type="submit" formaction="#checkout">Buy Now</button></td>
+          </tr>
+        </table>
+      </form>
+
+      <p><a href="#description">Description</a> &nbsp;|&nbsp; <a href="#specs">Specs</a> &nbsp;|&nbsp; <a href="#reviews">Reviews</a></p>
+      <table width="100%" border="2" cellpadding="20" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td id="description">Tanjiro Kamado in his Demon Slayer Corps uniform, mid-stance with sculpted water-breathing effects. Hand-painted PVC and ABS, with a detailed haori pattern and a display base.</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<h3>Related Products</h3>
+<table width="100%" cellspacing="10">
+  <tr>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="8" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="https://placehold.co/160x160/CCCCCC/333333?text=Nezuko" alt="Nezuko Kamado Nendoroid" width="160" height="160" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Nezuko Kamado Nendoroid</a>
+        </td></tr>
+      </table>
+    </td>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="8" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="https://placehold.co/160x160/CCCCCC/333333?text=Luffy" alt="Monkey D. Luffy 1/8 Scale Figure" width="160" height="160" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Monkey D. Luffy 1/8 Scale Figure</a>
+        </td></tr>
+      </table>
+    </td>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="8" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="https://placehold.co/160x160/CCCCCC/333333?text=Gojo" alt="Satoru Gojo 1/7 Scale Figure" width="160" height="160" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Satoru Gojo 1/7 Scale Figure</a>
+        </td></tr>
+      </table>
+    </td>
+    <td width="25%">
+      <table width="100%" border="2" cellpadding="8" cellspacing="0" bgcolor="#F4F4F4">
+        <tr><td align="center">
+          <a href="#product"><img src="https://placehold.co/160x160/CCCCCC/333333?text=Zoro" alt="Roronoa Zoro 1/7 Scale Figure" width="160" height="160" style="max-width:100%;height:auto;"></a>
+          <br><a href="#product">Roronoa Zoro 1/7 Scale Figure</a>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<h3 id="specs">Specs</h3>
+<p>Scale: 1/7 &middot; Material: PVC, ABS &middot; Height: approx. 25 cm &middot; Series: Demon Slayer</p>
+
+<h3 id="reviews">Reviews</h3>
+<p>&#9733;&#9733;&#9733;&#9733;&#9734; 4.0 average from 24 reviews.</p>
+
+<hr>
+
+<!-- ===== CART ===== -->
+<a id="cart"></a>
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <!-- Left: item list -->
+    <td width="66%" valign="top">
+      <form action="#cart" method="get">
+
+      <table width="100%" border="2" cellpadding="8" cellspacing="0" bgcolor="#E6E6E6">
+        <tr>
+          <td width="15%">Item</td>
+          <td width="35%">Details</td>
+          <td width="25%">Qty</td>
+          <td width="25%">Price</td>
+        </tr>
+      </table>
+      <br>
+
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td width="15%"><img src="https://placehold.co/80x80/CCCCCC/333333?text=Tanjiro" alt="Tanjiro Kamado 1/7 Scale Figure" width="80" height="80" style="max-width:100%;height:auto;"></td>
+          <td width="35%"><a href="#product">Tanjiro Kamado 1/7 Scale Figure</a><br>Scale 1/7 · Standard</td>
+          <td width="25%"><input type="number" name="qty" value="1" min="1" max="10" size="3"></td>
+          <td width="25%">$89.99<br><a href="#cart">Remove</a></td>
+        </tr>
+      </table>
+      <br>
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td width="15%"><img src="https://placehold.co/80x80/CCCCCC/333333?text=Nezuko" alt="Nezuko Kamado Nendoroid" width="80" height="80" style="max-width:100%;height:auto;"></td>
+          <td width="35%"><a href="#product">Nezuko Kamado Nendoroid</a><br>Nendoroid · Standard</td>
+          <td width="25%"><input type="number" name="qty" value="2" min="1" max="10" size="3"></td>
+          <td width="25%">$109.98<br><a href="#cart">Remove</a></td>
+        </tr>
+      </table>
+      <br>
+      <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td width="15%"><img src="https://placehold.co/80x80/CCCCCC/333333?text=Luffy" alt="Monkey D. Luffy 1/8 Scale Figure" width="80" height="80" style="max-width:100%;height:auto;"></td>
+          <td width="35%"><a href="#product">Monkey D. Luffy 1/8 Scale Figure</a><br>Scale 1/8 · Standard</td>
+          <td width="25%"><input type="number" name="qty" value="1" min="1" max="10" size="3"></td>
+          <td width="25%">$74.99<br><a href="#cart">Remove</a></td>
+        </tr>
+      </table>
+      <br>
+      <button type="submit">Update Cart</button>
+      </form>
+    </td>
+
+    <td width="3%">&nbsp;</td>
+
+    <!-- Right: order summary -->
+    <td width="31%" valign="top">
+      <table width="100%" border="2" cellpadding="12" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td>
+            <h3>ORDER SUMMARY</h3>
+            <hr>
+            <br>
+            <table width="100%" cellspacing="0" cellpadding="2">
+              <tr><td>Subtotal</td><td>$274.96</td></tr>
+              <tr><td>Shipping</td><td>$9.99</td></tr>
+              <tr><td>Tax</td><td>$22.00</td></tr>
+            </table>
+            <hr>
+            <table width="100%" cellspacing="0" cellpadding="2">
+              <tr><td><b>Total</b></td><td><b>$306.95</b></td></tr>
+            </table>
+            <br><br>
+            <form action="#checkout" method="get">
+              <button type="submit">Proceed to Checkout</button>
+            </form>
+            <p align="center"><a href="#products">&larr; Continue Shopping</a></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<!-- ===== CHECKOUT ===== -->
+<a id="checkout"></a>
+<form action="#home" method="post">
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <!-- Left column: shipping + payment -->
+    <td width="60%" valign="top">
+
+      <table width="100%" border="2" cellpadding="12" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td>
+            <h3>SHIPPING INFORMATION</h3>
+            <hr>
+            <table width="100%" cellspacing="6" cellpadding="0">
+              <tr>
+                <td width="50%"><input type="text" name="fullname" placeholder="Full Name" size="30" required></td>
+                <td width="50%"><input type="email" name="email" placeholder="Email" size="30" required></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="text" name="address1" placeholder="Address Line 1" size="30" required></td>
+              </tr>
+              <tr>
+                <td><input type="text" name="city" placeholder="City" size="30" required></td>
+                <td><input type="text" name="statezip" placeholder="State / Zip" size="30" required></td>
+              </tr>
+              <tr>
+                <td><input type="text" name="country" placeholder="Country" size="30" required></td>
+                <td><input type="tel" name="phone" placeholder="Phone" size="30"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <table width="100%" border="2" cellpadding="12" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td>
+            <h3>PAYMENT METHOD</h3>
+            <p>
+              <input type="radio" name="payment" value="card" checked> Credit Card
+              &nbsp;&nbsp;
+              <input type="radio" name="payment" value="paypal"> PayPal
+            </p>
+            <p><input type="text" name="cardnumber" placeholder="Card Number" size="45" inputmode="numeric" autocomplete="cc-number"></p>
+            <p>
+              <input type="text" name="expiry" placeholder="MM/YY" size="10" autocomplete="cc-exp">
+              &nbsp;
+              <input type="text" name="cvv" placeholder="CVV" size="6" autocomplete="cc-csc">
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td width="3%">&nbsp;</td>
+
+    <!-- Right column: order summary -->
+    <td width="37%" valign="top">
+      <table width="100%" border="2" cellpadding="12" cellspacing="0" bgcolor="#F4F4F4">
+        <tr>
+          <td>
+            <h3>ORDER SUMMARY</h3>
+            <hr>
+            <br>
+            <table width="100%" cellspacing="0" cellpadding="2">
+              <tr><td>Tanjiro Kamado 1/7 &times; 1</td><td>$89.99</td></tr>
+              <tr><td>Nezuko Nendoroid &times; 2</td><td>$109.98</td></tr>
+              <tr><td>Luffy 1/8 &times; 1</td><td>$74.99</td></tr>
+            </table>
+            <br>
+            <table width="100%" cellspacing="0" cellpadding="2">
+              <tr><td>Subtotal</td><td>$274.96</td></tr>
+              <tr><td>Shipping</td><td>$9.99</td></tr>
+              <tr><td>Tax</td><td>$22.00</td></tr>
+            </table>
+            <hr>
+            <table width="100%" cellspacing="0" cellpadding="2">
+              <tr><td><b>Total</b></td><td><b>$306.95</b></td></tr>
+            </table>
+            <br><br><br>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <p align="center"><button type="submit"><b>Place Order</b></button></p>
+      <p align="center">&#128274; Secure checkout</p>
+    </td>
+  </tr>
+</table>
+</form>
+
+<hr>
+<p align="center">&copy; 2026 SakuraShop &middot; Anime Figurines &amp; Related Merchandise<br>
+<a href="#about">About</a> | <a href="#cart">Cart</a> | <a href="#checkout">Checkout</a></p>
+
+</body>
+</html>
